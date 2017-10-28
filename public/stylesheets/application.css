@@ -1,0 +1,91 @@
+html {
+  background: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  html body {
+    background: #f0f0f0; }
+    html body section {
+      border: 1px solid #bebebe;
+      padding: 15px; }
+      html body section h1 {
+        clear: both;
+        font-weight: normal;
+        margin-bottom: 30px;
+        text-align: center; }
+      html body section .listings {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        html body section .listings .listing {
+          background: white;
+          margin: 5px;
+          padding: 20px;
+          -webkit-box-shadow: 5px 6px 6px -6px #CCC;
+          -moz-box-shadow: 5px 6px 6px -6px #CCC;
+          box-shadow: 5px 6px 6px -6px #CCC;
+          flex-grow: 1; }
+          html body section .listings .listing img {
+            float: left;
+            height: 70px;
+            margin-right: 20px; }
+          html body section .listings .listing .info {
+            float: left;
+            border: none;
+            color: #b4b4b4; }
+            html body section .listings .listing .info h4 {
+              font-weight: 600;
+              color: black; }
+          html body section .listings .listing button {
+            float: right;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #bebebe;
+            text-transform: uppercase;
+            background: white;
+            font-size: 1.1rem;
+            color: #007bff;
+            font-weight: 900; }
+            html body section .listings .listing button i {
+              font-size: 1.5rem; }
+          html body section .listings .listing button:hover {
+            background: #007bff;
+            color: white;
+            border: none; }
+        html body section .listings .listing:hover {
+          -webkit-box-shadow: 5px 6px 6px -6px #666;
+          -moz-box-shadow: 5px 6px 6px -6px #666;
+          box-shadow: 5px 6px 6px -6px #666; }
+    html body .shopping-cart {
+      clear: both;
+      width: 100px;
+      height: 100px;
+      float: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      top: 90%; }
+      html body .shopping-cart .cart {
+        border-radius: 50%;
+        padding: 25px;
+        background: #007bff;
+        border: none;
+        color: white; }
+      html body .shopping-cart .count {
+        border-radius: 50%;
+        border: none;
+        width: 30px;
+        padding: 5px;
+        color: black;
+        background: lime;
+        z-index: 99;
+        margin-top: 0;
+        margin-left: -30px;
+        font-weight: bold;
+        position: absolute; }
+
+/*# sourceMappingURL=application.css.map */

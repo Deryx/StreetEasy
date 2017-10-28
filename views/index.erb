@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>StreetEasy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="container">
+      <h1><%= @title %></h1>
+      <div class="row listings">
+        <% counter = 1 %>
+        <% for listing in @listings %>
+          <article class="listing col-lg-5 col-6" id="<%= counter %>">
+            <img src="images/apartment.png" alt="">
+            <section class="info">
+              <h4><%= listing[:address] %></h4>
+              <%= listing[:location] %>
+            </section>
+            <button>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              add
+            </button>
+          </article>
+          <% counter += 1 %>
+        <% end %>
+      </div>
+    </section>
+
+    <div class="shopping-cart">
+      <button type="button" name="cart" class="cart">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+      </button>
+      <button type="button" name="count" class="count"></button>
+    </div>
+  </body>
+
+  <!-- JavaScript -->
+  <script src="scripts/application.js"></script>
+</html>
